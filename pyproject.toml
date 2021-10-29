@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mattermost-mail"
+version = "0.1.0"
+description = "A simple action that reads incoming emails in a mailbox using imap and sends them in a Mattermost Webhook"
+authors = ["Vincent Vatelot <vincent.vatelot@ik.me>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.26.0"
+easyimap = "^0.7.0"
+python-environ = "^0.4.54"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^21.9b0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
